@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3001
 app.get('/health', (req, res) => {
   res.send({
     serverStatus: 'ok',
-    version: 'v1.0.0'
+    version: '1.0.0'
   })
 })
 
