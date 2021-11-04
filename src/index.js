@@ -9,6 +9,12 @@ app.get('/health', (req, res) => {
   })
 })
 
+app.get('/user/:id', (req, res) => {
+  res.send({
+    user_id: parseInt(req.params.id)
+  })
+})
+
 app.listen(PORT, () => {
   console.log(`Welcome to http://localhost:${PORT}`)
 })
