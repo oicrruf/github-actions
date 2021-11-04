@@ -1,9 +1,11 @@
 const request = require('supertest');
 const app = require('../src');
 
+const { version } = require('../package.json');
+
 const response = {
   serverStatus: 'ok',
-  version: 'v1.0.0'
+  version: version
 }
 
 it('test /health route', (done) => {
